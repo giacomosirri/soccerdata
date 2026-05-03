@@ -57,3 +57,9 @@ def understat_epl_9091() -> sd.Understat:
 def sofascore_epl_1516() -> sd.Sofascore:
     """Return a correctly initialized instance of Sofascore filtered by league: Premier League."""
     return sd.Sofascore("ENG-Premier League", "15-16")
+
+
+@pytest.fixture
+def nt() -> sd.NationalTeamsElo:
+    """Return a correctly initialized NationalTeamsElo instance."""
+    return sd.NationalTeamsElo()
